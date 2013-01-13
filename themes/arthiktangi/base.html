@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    {% block title %}
+    <title>{{ sitetitle }}</title>
+    {% endblock %}
+    <h1>{{ sitename }}</h1><br />
+  {%- for item,url in menu_list %}
+    <a href="{{ url }}">{{ item }}</a>{% if not loop.last %} | {% endif %}
+  {%- endfor %}
+  </head>
+  <body>
+    {% block body %}
+    Nothing in the body, eh?
+    {% endblock %}
+    <div id="footer">
+      Proudly powered by <a href="">Comatic</a>: The static webcomic generator.
+    </div>
+  </body>
+</html>
