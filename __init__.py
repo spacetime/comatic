@@ -9,8 +9,8 @@ import os
 import sys
 import time
 
-#from pelican.readers import comicreader
-#from pelican.writers import comicgenerator
+from readers import csvreader
+from writers import comicgenerator
 
 from settings import get_settings
 
@@ -32,6 +32,7 @@ class Comatic:
         write comics.
         rejoice.
         """
+        csvreader(settings['COMIC_CSV'])
         print "Hurrah!"
 
 
