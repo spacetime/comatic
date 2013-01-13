@@ -2,7 +2,7 @@ settings = {
     'AUTHOR': u'Rishab Arora',
     'SITENAME' : u'Arthik Tangi',
     'SITEURL' : 'http://www.arthiktangi.com',
-    'TITLE' : u'Arthik Tangi: The webcomic that should\'ve died'
+    'TITLE' : u'Arthik Tangi: The webcomic that should\'ve died',
     
     'TIMEZONE' : 'Asia/Kolkata',
     
@@ -11,7 +11,7 @@ settings = {
     
     'COMIC_RST_DIR' : 'content',
     'STATIC' : {'images',},
-    'OUTPUT_PATH' = 'output',
+    'OUTPUT_PATH' : 'output',
     
     'EXTRA_MENU' : {('Archives','/archives.html'),},
 
