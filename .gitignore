@@ -1,2 +1,9 @@
-./arbitfolder/*
+*~
+*.lock
+*.DS_Store
 *.pyc
+*.pyo
+auto-save-list
+\#*
+.#*
+\#*\#
