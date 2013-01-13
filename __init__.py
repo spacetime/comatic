@@ -10,7 +10,7 @@ import sys
 import time
 
 from readers import csvreader
-from writers import comicgenerator
+#from writers import comicgenerator
 
 from settings import get_settings
 
@@ -20,6 +20,7 @@ class Comatic:
         Do some initialization stuff here
         """
         self.output_path = settings['OUTPUT_PATH']
+        self.settings = settings
         
     def init_path(self):
         if not any(p in sys.path for p in ['', '.']):
@@ -32,7 +33,7 @@ class Comatic:
         write comics.
         rejoice.
         """
-        csvreader(settings['COMIC_CSV'])
+        csvreader(os.path.abspath(os.path.expanduser(self.settings['COMIC_CSV'])))
         print "Hurrah!"
 
 

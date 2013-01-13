@@ -9,7 +9,7 @@ settings = {
     'GOOGLE_ANALYTICS' : "UA-xxxxx-1",
     'DISQUS_ID' : 'xxxx',
     
-    'COMIC_CSV' : 'content/list.csv',
+    'COMIC_CSV' : 'contents/list.csv',
     'STATIC' : {'images',},
     'OUTPUT_PATH' : 'output',
     
