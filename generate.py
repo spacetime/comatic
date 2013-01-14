@@ -10,7 +10,7 @@ import sys
 import time
 
 from readers import csvreader
-#from writers import comicgenerator
+from writers import staticwriter
 
 from settings import get_settings
 
@@ -29,10 +29,14 @@ class Comatic:
     def run(self):
         """
         copy static files.
-        read comic rst.
+        read comic csv.
         write comics.
         rejoice.
         """
+        # copying static files
+        for folder in self.settings['STATIC']:
+            destpath = os.path.join(self.settings['OUTPUT_PATH'], 'static')
+            staticwriter(os.path.abspath(os.path.expanduser(folder)),os.path.abspath(os.path.expanduser(destpath)))
         csvreader(os.path.abspath(os.path.expanduser(self.settings['COMIC_CSV'])))
         print "Hurrah!"
 
