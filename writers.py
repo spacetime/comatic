@@ -1,4 +1,5 @@
 import shutil, errno
+from jinja2 import Template
 
 def staticwriter(src, dst):
     try:
@@ -8,3 +9,6 @@ def staticwriter(src, dst):
             shutil.copy(src, dst)
         else: raise
 
+def defaultwriter(theme,output):
+    #TODO
+    pass
