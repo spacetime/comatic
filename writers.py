@@ -9,6 +9,12 @@ def staticwriter(src, dst):
             shutil.copy(src, dst)
         else: raise
 
-def defaultwriter(theme,output):
-    #TODO
+def defaultwriter(comic_map, theme, output):
+    #print comic_map
+    #format of contents: map['comicnumber'] = {timestamp, extrainfo, title, author}
+    for strip in comic_map:
+        contents = comic_map[strip]
+        print contents
+        
     pass
+
