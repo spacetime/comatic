@@ -2,7 +2,7 @@ settings = {
     'AUTHOR': u'Rishab Arora',
     'SITENAME' : u'Arthik Tangi',
     'SITEURL' : 'http://www.arthiktangi.com',
-    'TITLE' : u'Arthik Tangi: The webcomic that should\'ve died',
+    'TITLE' : u'Arthik Tangi: Random thoughts from randomized minds',
     
     'TIMEZONE' : 'Asia/Kolkata',
     
@@ -10,7 +10,7 @@ settings = {
     'DISQUS_ID' : 'xxxx',
     
     'COMIC_CSV' : 'contents/list.csv',
-    'STATIC' : {'images',},
+    'STATIC' : {'images'},
     'OUTPUT_PATH' : 'output',
     
     'EXTRA_MENU' : {('Archives','/archives.html'),},
