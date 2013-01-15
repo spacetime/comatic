@@ -76,10 +76,10 @@ class Comatic:
         self.copy_static_files()
 
         #read comic CSV
-        comic_map = csvreader(os.path.abspath(os.path.expanduser(self.settings['COMIC_CSV'])))
+        comiclist = csvreader(os.path.abspath(os.path.expanduser(self.settings['COMIC_CSV'])))
         
         #write comics!
-        defaultwriter(comic_map, self.theme_templatepath, self.output_root)
+        defaultwriter(comiclist, self.theme_templatepath, self.output_root, self.settings)
         print "Done"
 
 
