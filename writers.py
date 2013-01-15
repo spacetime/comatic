@@ -30,13 +30,20 @@ def defaultwriter(comiclist, theme_path, output_path, settings):
         title = comicstrip[3]
         author = comicstrip[4]
         alternate = comicstrip[5]
-        print jinja_env.get_template('comicstrip.html').render(
+        comicfile = jinja_env.get_template('comicstrip.html').render(
                     sitetitle = settings['TITLE'],
                     number = comicnumber, 
                     comictitle = title,
                     limit = lastnumber,
                     alttext = alternate,
                     )
+        strip_dir = os.path.join(output_path,'%d' % comicnumber)
+        os.makedirs(strip_dir)
+        print strip_dir
+        comic_strip_path = os.path.join(strip_dir,'index.html')
+        file_writer = open(comic_strip_path,'w')
+        file_writer.write(comicfile)
+        file_writer.close()
     #write index
     #write authors page
     #write archives page
