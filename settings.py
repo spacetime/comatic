@@ -13,7 +13,9 @@ settings = {
     'STATIC' : {'images'},
     'OUTPUT_PATH' : 'output',
     
-    'EXTRA_MENU' : {('Archives','/archives.html'),},
+    'EXTRA_MENU' : {
+        #('Archives','/archives.html'),
+        },
 
     'THEME': 'arthiktangi',
     'FOOTER': """

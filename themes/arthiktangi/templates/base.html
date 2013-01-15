@@ -3,19 +3,21 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <head>
     {% block title %}
-    <title>{{ sitetitle }}</title>
+    <title>{{ settings['TITLE'] }}</title>
     {% endblock %}
-    <h1>{{ sitename }}</h1><br />
-  {%- for item,url in menu_list %}
+    <h1>{{ settings['SITENAME'] }}</h1><br />
+  {% for item,url in settings['EXTRA_MENU'] %}
     <a href="{{ url }}">{{ item }}</a>{% if not loop.last %} | {% endif %}
   {%- endfor %}
+    <br />
   </head>
   <body>
     {% block body %}
     Nothing in the body, eh?
     {% endblock %}
     <div id="footer">
-      Proudly powered by <a href="">Comatic</a>: The static webcomic generator.
+      {{ settings['FOOTER'] }} <br />
+      Proudly powered by <a href="https://github.com/spacetime/comatic">Comatic</a>: The static webcomic generator.
     </div>
   </body>
 </html>

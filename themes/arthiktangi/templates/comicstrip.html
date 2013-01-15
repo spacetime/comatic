@@ -8,7 +8,8 @@
 <h3>{{ comictitle }}</h3>
 <img class=comic src="{{ imgpath }}" alt="{{ alttext }}">
 </img>
-{% if number != 1 %} <a href="../{{ number - 1 }}/">Prev</a> {% endif %} 
+<br />
+{% if number != 1 %} <a href="../{{ number - 1 }}/">Prev </a> {% endif %} 
 {% if number != limit %} <a href="../{{ number + 1 }}/">Next</a> {% endif %} 
 <br />
 <br />
