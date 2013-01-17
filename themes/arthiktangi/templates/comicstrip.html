@@ -8,14 +8,15 @@
 {% block body %}
 <div class="container" align=center>
 	<br>
-<h2>{{ comictitle }}</h2>
+	<div class="title-box" >
+<h4>{{ comictitle}}</h4></div>
 <div align=center>
 <img  class="img-rounded"  src="{{ imgpath }}" alt="{{ alttext }}">
 </img>
 </div>
 <br />
 <div class="nav-box">
-{% if number != 1 %} <a href="../{{ number - 1 }}/" class="nav" align=middle>Previous</a> {% endif %} 
+{% if number != 1 %} <a href="../{{ number - 1 }}/" class="nav" align=middle><</a><h5>PREVIOUS</h5> {% endif %} 
 {% if number != limit %} <a href="../{{ number + 1 }}/" class="nav" align=middle>></a><h5>NEXT</h5> {% endif %} 
 </div>
 <br />
