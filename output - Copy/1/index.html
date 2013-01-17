@@ -3,32 +3,32 @@
   <link rel="stylesheet" type="text/css" href="../static/arthiktangi/css/base.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <head>
-    {% block title %}
-   
-    <title>{{ settings['TITLE'] }}</title>
     
-    {% endblock %}
+<title>1 - Arthik Tangi: Random thoughts from randomized minds</title>
     <div align=center><img src="../static/arthiktangi/css/ATLOGOs.png" class="img-cont"></div>
-    <h1>ARTHIK TANGI</h1><br />
+    <h1>Arthik Tangi</h1><br />
     <h6>full non-sense webcomic</h6>
-   
-    <div align=center>
-<hr class="hr">
-  {% for item,url in settings['EXTRA_MENU'] %}
- 
-    <a href="{{ url }}" >{{ item }}</a>{% if not loop.last %} | {% endif %}
-  {%- endfor %}
-   
+    <hr class="hr">
+    <div >
+      <br />
   </div>
   </head>
   <body class="body">
-    {% block body %}
-    Nothing in the body, eh?
-    {% endblock %}
-    <br>
-    <hr class="hr">
+    <div class="container">
+<h3>man cat</h3>
+<img align="middle" class="img-rounded"  src="../static/mancat.png" alt="Alternate Text for ManCat here!">
+</img>
+<br />
+ 
+ <a href="../2/" class="nav">></a>  
+<br />
+<br />
+
+</div>
     <div id="footer" class="footer">
-      {{ settings['FOOTER'] }} <br />
+      
+ This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License. 
+ <br />
       Proudly powered by <a href="https://github.com/spacetime/comatic">Comatic</a>: The static webcomic generator.
     </div>
   </body>
