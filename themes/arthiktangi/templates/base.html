@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html>
   <link rel="stylesheet" type="text/css" href="../static/arthiktangi/css/base.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -9,22 +9,21 @@
     <title>{{ settings['TITLE'] }}</title>
     
     {% endblock %}
+    
     <div align=center><img src="../static/arthiktangi/css/ATLOGOs.png" class="img-cont"></div>
-    <h1>ARTHIK TANGI</h1>
+    
+        
     <h6>Classroom doodle webcomic</h6>
-   <div align=center> <a href="#" class="button" align=middle>Home</a>
-<a href="#" class="button" align=middle>About</a>
-<a href="#" class="button" align=middle>I want in!</a>
-<a href="#" class="button" align=middle>Best* of AT</a>
- </div>
-    <div align=center>
-<hr class="hr">
-  {% for item,url in settings['EXTRA_MENU'] %}
+   <div align=center> 
+    {% for item,url in settings['EXTRA_MENU'] %}
  
-    <a href="{{ url }}" >{{ item }}</a>{% if not loop.last %} | {% endif %}
+    <a href="{{ url }}" class="button" align-middle>{{ item }}</a>{% if not loop.last %} | {% endif %}
   {%- endfor %}
-   
-  </div>
+ </div>
+    
+<hr class="hr">
+  
+  
   </head>
   <body class="body">
     
@@ -36,11 +35,13 @@
     {% endblock %}
     
     <hr class="hr">
-   
+ 
     <div id="footer" class="footer">
       {{ settings['FOOTER'] }} <br />
       
       Proudly powered by <a href="https://github.com/spacetime/comatic" class="link">Comatic</a>: The static webcomic generator.
+
+
 
     </div>
  
