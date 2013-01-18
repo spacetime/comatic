@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
 
 
 
@@ -49,6 +49,7 @@ body {
 
 background-color: #fff; 
 background-image:linear-gradient(#eee 1px, transparent .1em);
+background-image:-webkit-linear-gradient(#eee 1px, transparent .1em);
 background-size: 100% 1.2em;
 
 /*   
@@ -65,7 +66,7 @@ background-size: 50px 50px;
 
  margin-right: auto;
 position: relative;
- 
+
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -117,7 +118,7 @@ hr {
   border: 0;
   max-width: auto;
   position: center;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   border-top: 10px solid #FA5849;
   
 }
@@ -140,13 +141,14 @@ hr {
 }
 
 h1{
+  font-family: 'Just Me Again Down Here', cursive;
   margin-top: 50px;
     color: #424242;
-    font-weight: 300;
-   letter-spacing: 4px;
-  line-height: 0px;
+   letter-spacing: 5px;
+  line-height: 5px;
      text-shadow: 0px 0.2px 0.2px #fff;
-     font-size: 55.5px;
+     font-size: 65.5px;
+     padding-bottom: 5px;
 
 }
 h2,
@@ -168,8 +170,9 @@ h3 {
 }
 
 h4 {
+
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FA5849;
   text-rendering: optimizelegibility;
 }
@@ -184,12 +187,13 @@ h6 {
 
   font-size: 15px;
       color: #424242;
+      padding-top: 10px;
       padding-bottom: 30px;
 
 }
 
 .link{
-  color: #fff;
+  color: #fa5749;
 }
 
 .nav{
@@ -200,7 +204,7 @@ h6 {
 }
 
 .nav:hover{
-  color: #ffa;
+  color: #fa5749;
 }
 
 .nav-box{
@@ -215,6 +219,7 @@ background-size: 100% 1.2em;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+ 
 }
 
 
@@ -236,3 +241,34 @@ margin-bottom: 20px;
 
  
 }
+
+.button {
+ 
+   background: #fa5749;
+   background: -webkit-gradient(linear, left top, left bottom, from(#fa5749), to(#fa5749));
+   background: -webkit-linear-gradient(top, #fa5749, #fa5749);
+   background: -moz-linear-gradient(top, #fa5749, #fa5749);
+   background: -ms-linear-gradient(top, #fa5749, #fa5749);
+   background: -o-linear-gradient(top, #fa5749, #fa5749);
+   padding: 8px 10px;
+  
+  -webkit-border-radius: 1px;
+     -moz-border-radius: 1px;
+          border-radius: 1px;
+ 
+   
+   color: #fff;
+   font-size: 13px;
+   font-family: 'Open Sans',Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+
+   background: #424242;
+   color: #ffffff;
+   }
+.button:active {
+
+   background: #fa5749;
+   }

@@ -2,6 +2,7 @@
 <html>
   <link rel="stylesheet" type="text/css" href="../static/arthiktangi/css/base.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
   <head>
     {% block title %}
    
@@ -9,9 +10,13 @@
     
     {% endblock %}
     <div align=center><img src="../static/arthiktangi/css/ATLOGOs.png" class="img-cont"></div>
-    <h1>ARTHIK TANGI</h1><br />
-    <h6>full non-sense webcomic</h6>
-   
+    <h1>ARTHIK TANGI</h1>
+    <h6>Classroom doodle webcomic</h6>
+   <div align=center> <a href="#" class="button" align=middle>Home</a>
+<a href="#" class="button" align=middle>About</a>
+<a href="#" class="button" align=middle>I want in!</a>
+<a href="#" class="button" align=middle>Best* of AT</a>
+ </div>
     <div align=center>
 <hr class="hr">
   {% for item,url in settings['EXTRA_MENU'] %}
@@ -22,14 +27,22 @@
   </div>
   </head>
   <body class="body">
+    
+    <!-- fb -->
+
+
     {% block body %}
     Nothing in the body, eh?
     {% endblock %}
-    <br>
+    
     <hr class="hr">
+   
     <div id="footer" class="footer">
       {{ settings['FOOTER'] }} <br />
-      Proudly powered by <a href="https://github.com/spacetime/comatic">Comatic</a>: The static webcomic generator.
+      
+      Proudly powered by <a href="https://github.com/spacetime/comatic" class="link">Comatic</a>: The static webcomic generator.
+
     </div>
+ 
   </body>
 </html>
