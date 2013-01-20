@@ -1,23 +1,49 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html>
+  <link rel="stylesheet" type="text/css" href="../static/arthiktangi/css/base.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="shortcut icon" href="../static/arthiktangi/css/fav.png">
   <head>
     {% block title %}
+   
     <title>{{ settings['TITLE'] }}</title>
+    
     {% endblock %}
-    <h1>{{ settings['SITENAME'] }}</h1><br />
-  {% for item,url in settings['EXTRA_MENU'] %}
-    <a href="{{ url }}">{{ item }}</a>{% if not loop.last %} | {% endif %}
+    
+    <div align=center><img src="../static/arthiktangi/css/ATLOGOs.png" class="img-cont"></div>
+    
+        
+    <h6>Classroom doodle webcomic</h6>
+   <div align=center> 
+    {% for item,url in settings['EXTRA_MENU'] %}
+ 
+    <a href="{{ url }}" class="button" align-middle>{{ item }}</a>{% if not loop.last %} | {% endif %}
   {%- endfor %}
-    <br />
+ </div>
+    
+<hr class="hr">
+  
+  
   </head>
-  <body>
+  <body class="body">
+    
+    <!-- fb -->
+
+
     {% block body %}
     Nothing in the body, eh?
     {% endblock %}
-    <div id="footer">
+    
+    <hr class="hr">
+ 
+    <div id="footer" class="footer">
       {{ settings['FOOTER'] }} <br />
-      Proudly powered by <a href="https://github.com/spacetime/comatic">Comatic</a>: The static webcomic generator.
+      
+      Proudly powered by <a href="https://github.com/spacetime/comatic" class="link">Comatic</a>: The static webcomic generator.
+
+
+
     </div>
+ 
   </body>
 </html>

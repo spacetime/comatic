@@ -14,7 +14,11 @@ settings = {
     'OUTPUT_PATH' : 'output',
     
     'EXTRA_MENU' : {
-        #('Archives','/archives.html'),
+        ('Home','#'),
+        ('Archives','/a.html'),
+        ('Best of AT','/b.html'),
+        ('About','/c.html'),
+        ('I want in','/d.html')
         },
 
     'THEME': 'arthiktangi',

@@ -1,17 +1,34 @@
 {% extends "base.html" %}
-
+ 
 {% block title %}
+
 <title>{{ number }} - {{ settings['TITLE'] }}</title>
 {% endblock %}
 
 {% block body %}
-<h3>{{ comictitle }}</h3>
-<img class=comic src="{{ imgpath }}" alt="{{ alttext }}">
+<div class="container" align=center>
+	<br>
+	<div class="title-box" >
+<h4>{{ comictitle}}</h4></div>
+<div align=center>
+<img  class="img-rounded"  src="{{ imgpath }}" alt="{{ alttext }}">
 </img>
+</div>
 <br />
-{% if number != 1 %} <a href="../{{ number - 1 }}/">Prev </a> {% endif %} 
-{% if number != limit %} <a href="../{{ number + 1 }}/">Next</a> {% endif %} 
+<div class="nav-box">
+{% if number != 1 %} <a href="../{{ number - 1 }}/" class="nav" align=middle><</a><h5>PREVIOUS</h5> {% endif %} 
+{% if number != limit %} <a href="../{{ number + 1 }}/" class="nav" align=middle>></a><h5>NEXT</h5> {% endif %} 
+</div>
+
+
+	<div class="image">
+    <img src="../static/arthiktangi/css/fb.png" alt="" />
+    <img class="hoverimage" src="../static/arthiktangi/css/fbh.png" alt="" />
+</div>
 <br />
 <br />
 {{ othertext }}
+
+
+</div>
 {% endblock %}
