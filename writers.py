@@ -46,6 +46,11 @@ def defaultwriter(comiclist, theme_path, output_path, settings):
         file_writer = open(comic_strip_path,'w')
         file_writer.write(comicfile)
         file_writer.close()
+        if comicnumber is lastnumber:
+            comic_strip_path = os.path.join(output_path,'index.html')
+            file_writer = open(comic_strip_path,'w')
+            file_writer.write(comicfile)
+            file_writer.close()
     #write index
     #write authors page
     #write archives page
