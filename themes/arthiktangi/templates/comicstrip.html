@@ -7,26 +7,26 @@
 
 {% block body %}
 <div class="container" align=center>
-	<br>
-	<div class="title-box" >
+<br>
+<div class="title-box" >
 <h4>{{ comictitle}}</h4></div>
 <div align=center>
 <img  class="img-rounded"  src="{{ imgpath }}" alt="{{ alttext }}">
 </img>
 </div>
 <br />
+<div align="center">
 <div class="nav-box">
-{% if number != 1 %} <a href="../{{ number - 1 }}/" class="nav" align=middle><</a><h5>PREVIOUS</h5> {% endif %} 
-{% if number != limit %} <a href="../{{ number + 1 }}/" class="nav" align=middle>></a><h5>NEXT</h5> {% endif %} 
+{% if number != 1 %} <a href="../{{ number - 1 }}/" class="pbutton" > < </a>{% endif %} 
+{% if number != limit %} <a href="../{{ number + 1 }}/" class="nbutton" >  > </a> {% endif %} 
+</div>
+<hr class="hr">
 </div>
 
+	
+<br />
+<br />
 
-	<div class="image">
-    <img src="../static/arthiktangi/css/fb.png" alt="" />
-    <img class="hoverimage" src="../static/arthiktangi/css/fbh.png" alt="" />
-</div>
-<br />
-<br />
 {{ othertext }}
 
 
