@@ -10,18 +10,18 @@
     
     {% endblock %}
     
-    <div align=center><img src="../static/arthiktangi/css/ATLOGOs.png" class="img-cont"></div>
+  <div align=center><img src="../static/arthiktangi/css/ATLOGOs.png" class="img-cont"></div>
     
-        
-    <h6>Classroom doodle webcomic</h6>
+  <br>
+  <br>
    <div align=center> 
     {% for item,url in settings['EXTRA_MENU'] %}
  
-    <a href="{{ url }}" class="button" align-middle>{{ item }}</a>{% if not loop.last %} | {% endif %}
-  {%- endfor %}
+    <a href="{{ url }}" class="button" align-middle>{{ item }}</a>{% if not loop.last %} {% endif %}
+    {%- endfor %}
  </div>
     
-<hr class="hr">
+
   
   
   </head>
@@ -34,7 +34,7 @@
     Nothing in the body, eh?
     {% endblock %}
     
-    <hr class="hr">
+  
  
     <div id="footer" class="footer">
       {{ settings['FOOTER'] }} <br />
